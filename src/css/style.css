@@ -27,7 +27,7 @@ body{
 nav{
     position: relative;
     top: 3rem;
-    left: 7rem;
+    left: 5rem;
 }
 .logo{
     position: relative;
@@ -60,9 +60,11 @@ nav{
     color: #f96262;
     font-weight: 400;
     padding: 10px 5rem 15px 0;
+    text-align: justify;
 }
 .data .data__form{
     position: relative;
+    padding-top: 15px;
 }
 .data .data__form input{
     background-color: transparent;
@@ -93,6 +95,19 @@ nav{
 .data .data__form button:focus{
     outline: none;
 }
+@media screen and (max-width: 375px){
+    nav{
+        width: 50%;
+        left: .5rem;
+    }
+    .logo{
+        left: 2.1rem;
+    }
+    .data{
+        padding-top: 30px;
+        margin: 0 1.5rem 0 1.5rem;
+    }
+}
 @media screen and (max-width: 720px){
     .drawer__info{
         position: relative;
@@ -122,22 +137,10 @@ nav{
         font-size: 2.5rem;
     }
     .data{
-        margin: 0 4.5rem 0 4.5rem;
+        padding-top: 30px;
+        margin: 0 1.5rem 0 1.5rem;
     }
     .data .data__subTitle{
         font-size: 3rem;
-    }
-}
-@media screen and (min-width: 375px){
-    nav{
-        width: 50%;
-        left: .5rem;
-    }
-    .logo{
-        left: 2.1rem;
-    }
-    .data{
-        padding-top: 30px;
-        margin: 0 1.5rem 0 1.5rem;
     }
 }
